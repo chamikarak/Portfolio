@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Roboto+Mono&display=swap");
+
+html {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: rgb(114, 184, 238);
+  color: rgba(20, 37, 95, 0.5);
+}
+
+h1,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5,
+p {
+  text-align: center;
+}
+
+h5 {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon {
+  width: 25px;
+  height: auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-column,
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  background-color: rgb(48, 48, 48);
+}
+
+section {
+  min-height: 100vh;
+}
+
+#hero,
+#me,
+#projects,
+#contacts {
+  margin-top: 74px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+section {
+  opacity: 0;
+  animation: fade 1s ease-in 0.2s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) {
+  .wallpaper,
+  .discription {
+    width: 100%;
+  }
+  .my-photo {
+    width: 75%;
+  }
+  .intro {
+    width: 100%;
+  }
+  .ieeecs-logo {
+    width: 75%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wallpaper,
+  .discription,
+  .intro,
+  .ieeecs-logo,
+  .exp-discription {
+    width: 75%;
+  }
+  .my-photo {
+    width: 50%;
+  }
+  .card-head {
+    height: 150px;
+  }
+  .card-body {
+    height: 250px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wallpaper,
+  .discription {
+    width: 50%;
+  }
+  .my-photo,
+  .intro,
+  .ieeecs-logo,
+  .exp-discription {
+    width: 75%;
+  }
+  .card-head {
+    height: 150px;
+  }
+  .card-body {
+    height: 220px;
+  }
+}
